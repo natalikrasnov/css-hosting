@@ -1,0 +1,219 @@
+
+#product-overview{
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 528px;
+    padding: 0.625rem;
+    /* margin-top: 43px; */
+    position: relative;
+}
+
+#product-overview h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;        
+    font-size: 1.6rem;
+
+}
+
+.plane__list{
+    display: flex;
+    flex-direction: column;
+    /* height: 28rem; */
+    justify-content: space-between;
+
+}
+
+
+.plane{
+    background: rgb(241, 198, 220);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.plan--highlighted{
+    background: rgb(250, 162, 216);
+    color: white;
+}
+
+.plan__annotation{
+    background: white;
+    color: cornflowerblue;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0, 0.5);
+    border-radius: 0.5rem;
+}
+
+.plane__title{
+    color: white;
+}
+
+.plane__price{
+    color: grey;
+}
+
+.plan--highlighted .plane__title{
+    color: rgb(240, 94, 215);
+}
+
+.plan--highlighted .plan__price {
+    color: rgb(240, 94, 215);
+}
+
+.plan__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__feature {
+    margin: 0.5rem 0;
+}
+
+.plan__features li{
+    margin: 0.5rem 0;
+}
+
+
+#key-features{
+    /* background-color: deepskyblue; */
+    background-image: linear-gradient(to top /*circle to top*/ /*360deg*/,transparent, pink  , cornflowerblue , transparent );
+
+    margin-top: 5rem;
+    padding: 1rem;
+
+    
+}
+
+#key-features .section-title{
+    color: white;
+    margin: 2rem;
+}
+
+.key-features__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-features__image{
+    background: white;
+    width: 128px;
+    height: 128px;
+    border: 2px solid rgb(0,0,0, 0.5);
+    border-radius: 50%;
+    margin: auto;
+    padding: 1.25rem;
+}
+
+.key-features__description{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.modal{
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.modal__title{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal__actions{
+    text-align: center;
+}
+
+.modal__action{
+    border: 1px solid green;
+    background: green;
+    text-decoration: none;
+    color: white;
+    font:inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active{
+    background: lightgreen;
+    border-color:lightgreen ;
+}
+
+.modal__action--negative{
+    background: red;
+    border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active{
+    background: rgb(240, 134, 134);
+    border-color: rgb(240, 134, 134);
+}
+
+
+@media (min-width:40rem) and (orientation: landscape){
+    #product-overview{
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+    #product-overview h1{  
+        font-size: 3rem;  
+    }
+    
+    .plane__list{
+        width: 80%;     
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .plane{
+        width: 30%;
+        margin: 0.5rem;
+        min-width: 10rem;
+        max-width: 15rem;
+    }
+    
+    .plan--highlighted{
+        box-shadow: 2px 2px 2px 2px rgb(0,0,0, 0.5);
+    }
+    
+    
+    .key-features__list{
+        
+        flex-direction: row;
+    }
+
+    .key-feature{
+        width: 30%;
+    }
+
+    
+}

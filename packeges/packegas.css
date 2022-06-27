@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Titan One";
+    src: url('./TitanOne-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "BIZ UDGothic";
+    src: url('./BIZUDGothic-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "BIZ UDGothic";
+    src: url('./BIZUDGothic-Bold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+.packege{
+    border: 3px solid rgb(255, 238, 241);
+    width: 80%;
+    margin:1rem 0 ;
+    position: relative;
+    margin-top: 2.5rem;
+    border-left: none;
+    overflow: hidden;
+}
+
+.packege:hover,
+.packege:active{
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+    border-color: green !important;
+}
+
+.packege a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.packege__badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.25rem;
+    font-size: 0.75rem;
+    color: white;
+    background: red;
+    padding: 0.5rem;
+    transform: rotateZ(45deg) translate(3.5rem, -2rem) /*translateX(3.5rem) translateY(-2rem)*/;
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+}
+
+.packege h1{
+    font-family: "Titan One", sans-serif;
+    text-shadow: 2px 2px 2px lightslategrey;
+}
+
+.packege h2{
+    color: gray;
+    /* font-family: 'BIZ UDGothic', sans-serif; */
+    /* font-weight: 700; */
+    /* text-decoration: underline double green; */
+
+    /* font: menu; */
+    font: italic small-caps 700 1.5rem/0.2 "BIZ UDGothic", sans-serif;
+    /* font-style  font-variant font-weight font-size/line heigth font-family */
+}
+
+.packege p{
+    padding: 1rem;
+    border: 1px solid rgb(252, 212, 219);
+    font-size: 1.25rem;
+    color: rgb(71, 66, 66);
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#pluse{
+    background: rgb(243, 196, 243, 0.7);
+}
+
+#free{
+    background: rgb(247, 197, 247, 0.7);
+    float: right;
+    border-right: none;
+    border-left: 3px solid rgb(255, 238, 241);
+    text-align: right;
+}
+
+/* #free:hover,
+#free:active{
+    border-color: green;
+} */
+
+#premium{
+    background: rgb(241, 170, 206,0.7);
+}
+
+  
+@media (min-width:47rem){
+    main{
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+
+}
+
+@media (min-width:1500px) {
+
+    .packege{
+        border-left: 4px solid rgb(255, 238, 241);
+    }
+
+    #free{        
+        border-right: 4px solid rgb(255, 238, 241);
+    }
+}
